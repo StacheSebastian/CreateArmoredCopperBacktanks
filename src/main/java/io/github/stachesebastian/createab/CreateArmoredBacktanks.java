@@ -1,9 +1,10 @@
-package mod.yourname.yourmodid;
+package io.github.stachesebastian.createab;
 
 import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.simibubi.create.repack.registrate.util.NonNullLazyValue;
-import mod.yourname.yourmodid.register.*;
-import mod.yourname.yourmodid.register.config.ModConfigs;
+import com.simibubi.create.repack.registrate.util.nullness.NonNullSupplier;
+import io.github.stachesebastian.createab.register.*;
+import io.github.stachesebastian.createab.register.config.ModConfigs;
+import mod.StacheSebastian.createab.BuildConfig;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.data.loading.DatagenModLoader;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,17 +17,17 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @Mod(BuildConfig.MODID)
-public class CreateAddon {
+public class CreateArmoredBacktanks {
 
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger(BuildConfig.MODID);
     public static IEventBus modEventBus;
 
-    public static final NonNullLazyValue<CreateRegistrate> registrate = CreateRegistrate.lazy(BuildConfig.MODID);
+    public static final NonNullSupplier<CreateRegistrate> REGISTRATE = CreateRegistrate.lazy(BuildConfig.MODID);
 
-    public CreateAddon() {
+    public CreateArmoredBacktanks() {
         modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        CreateRegistrate r = registrate.get();
+        CreateRegistrate r = REGISTRATE.get();
         ModItems.register(r);
         ModBlocks.register(r);
         ModEntities.register(r);

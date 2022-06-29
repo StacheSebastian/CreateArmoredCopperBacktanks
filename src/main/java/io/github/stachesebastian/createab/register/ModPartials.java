@@ -1,8 +1,8 @@
-package mod.yourname.yourmodid.register;
+package io.github.stachesebastian.createab.register;
 
 import com.jozufozu.flywheel.core.PartialModel;
 import com.simibubi.create.Create;
-import mod.yourname.yourmodid.BuildConfig;
+import mod.StacheSebastian.createab.BuildConfig;
 import net.minecraft.resources.ResourceLocation;
 
 public class ModPartials {

@@ -1,4 +1,4 @@
-package mod.yourname.yourmodid.register;
+package io.github.stachesebastian.createab.register;
 
 import com.simibubi.create.foundation.data.CreateRegistrate;
 

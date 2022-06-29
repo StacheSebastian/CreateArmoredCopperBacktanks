@@ -1,8 +1,8 @@
-package mod.yourname.yourmodid.register;
+package io.github.stachesebastian.createab.register;
 
 import com.simibubi.create.AllItems;
 import com.simibubi.create.foundation.data.CreateRegistrate;
-import mod.yourname.yourmodid.BuildConfig;
+import mod.StacheSebastian.createab.BuildConfig;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
