@@ -1,12 +1,13 @@
 {
   "required": true,
   "package": "io.github.stachesebastian.createab.mixin",
-  "compatibilityLevel": "JAVA_8",
+  "compatibilityLevel": "JAVA_17",
   "refmap": "createab.refmap.json",
   "mixins": [
+    "BackTankUtilMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   },
-  "minVersion": "0.8"
+  "minVersion": "0.8.5"
 }

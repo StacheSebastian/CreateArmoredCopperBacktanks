@@ -103,7 +103,7 @@ dependencies {
     implementation fg.deobf("com.simibubi.create:Create:mc${create_version}")
     implementation fg.deobf("com.jozufozu.flywheel:Flywheel-Forge:${flywheel_version}")
 
-    annotationProcessor 'org.spongepowered:mixin:0.8:processor'
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
 compileJava.options.encoding = 'UTF-8'

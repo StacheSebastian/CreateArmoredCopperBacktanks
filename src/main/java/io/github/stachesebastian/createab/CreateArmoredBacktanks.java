@@ -5,6 +5,7 @@ import com.simibubi.create.repack.registrate.util.nullness.NonNullSupplier;
 import io.github.stachesebastian.createab.register.*;
 import io.github.stachesebastian.createab.register.config.ModConfigs;
 import mod.StacheSebastian.createab.BuildConfig;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.data.loading.DatagenModLoader;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -25,15 +26,20 @@ public class CreateArmoredBacktanks {
 
     public static final NonNullSupplier<CreateRegistrate> REGISTRATE = CreateRegistrate.lazy(BuildConfig.MODID);
 
+    public static CreativeModeTab createabtab = new CreateArmoredBacktanksTab();
+
+    public static CreateRegistrate registrate() {
+        return (CreateRegistrate)REGISTRATE.get();
+    }
+
     public CreateArmoredBacktanks() {
+        ModItems.register();
+        ModBlocks.register();
+        ModEntities.register();
+        ModTiles.register();
         modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        CreateRegistrate r = REGISTRATE.get();
-        ModItems.register(r);
-        ModBlocks.register(r);
-        ModEntities.register(r);
-        ModTiles.register(r);
         if (DatagenModLoader.isRunningDataGen()) {
-            modEventBus.addListener((GatherDataEvent g) -> ModPonder.generateLang(r, g));
+            modEventBus.addListener((GatherDataEvent g) -> ModPonder.generateLang(REGISTRATE.get(), g));
         }
         modEventBus.addListener((FMLClientSetupEvent e) -> ModPonder.register());
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT,

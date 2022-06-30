@@ -1,20 +1,28 @@
 package io.github.stachesebastian.createab.register;
 
-import com.simibubi.create.AllItems;
+import com.simibubi.create.content.curiosities.armor.CopperArmorItem;
+import com.simibubi.create.content.curiosities.armor.CopperBacktankItem;
+import com.simibubi.create.foundation.data.AssetLookup;
 import com.simibubi.create.foundation.data.CreateRegistrate;
-import mod.StacheSebastian.createab.BuildConfig;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
+import com.simibubi.create.repack.registrate.util.entry.ItemEntry;
+import io.github.stachesebastian.createab.CreateArmoredBacktanks;
 
 public class ModItems {
-    public static CreativeModeTab itemGroup = new CreativeModeTab(BuildConfig.MODID) {
-        @Override
-        public ItemStack makeIcon() {
-            return new ItemStack(AllItems.WRENCH.get());
-        }
-    };
 
-    public static void register(CreateRegistrate registrate) {
-        registrate.creativeModeTab(()->itemGroup, BuildConfig.DISPLAY_NAME);
-    }
+    private static final CreateRegistrate REGISTRATE = CreateArmoredBacktanks.registrate()
+            .creativeModeTab(() -> CreateArmoredBacktanks.createabtab);
+
+
+    public static final ItemEntry<CopperBacktankItem.CopperBacktankBlockItem> COPPER_BACKTANK_PLACEABLE = REGISTRATE
+            .item("copper_backtank_placeable", p -> new CopperBacktankItem.CopperBacktankBlockItem(ModBlocks.COPPER_BACKTANK.get(), p))
+            .model((c, p) -> p.withExistingParent(c.getName(), p.mcLoc("item/barrier")))
+            .register();
+
+    public static final ItemEntry<? extends CopperArmorItem> COPPER_BACKTANK = REGISTRATE
+            .item("copper_backtank", p -> new CopperBacktankItem(p, COPPER_BACKTANK_PLACEABLE))
+            .model(AssetLookup.customGenericItemModel("_", "item"))
+            .register();
+
+    public static void register() {}
+
 }

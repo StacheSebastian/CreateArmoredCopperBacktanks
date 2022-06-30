@@ -8,7 +8,7 @@ displayName = "CreateArmoredBacktanks" #mandatory
 description = '''
 Adds armored Backtanks to Create
 '''
-[dependencies.createab]] #optional
+[[dependencies.createab]] #optional
 modId = "forge" #mandatory
 mandatory = true #mandatory
 versionRange = "[40,)" #mandatory
@@ -24,5 +24,5 @@ side = "BOTH"
 modId = "create"
 mandatory = true
 versionRange = "[0.4.1,)"
-ordering = "AFTER"
+ordering = "NONE"
 side = "BOTH"

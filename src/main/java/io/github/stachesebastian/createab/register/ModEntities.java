@@ -3,7 +3,6 @@ package io.github.stachesebastian.createab.register;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 
 public class ModEntities {
-    public static void register(CreateRegistrate registrate) {
+    public static void register() {}
 
-    }
 }
