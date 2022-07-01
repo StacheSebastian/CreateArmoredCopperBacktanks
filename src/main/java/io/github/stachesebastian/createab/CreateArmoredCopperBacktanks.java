@@ -18,7 +18,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @Mod(BuildConfig.MODID)
-public class CreateArmoredBacktanks {
+public class CreateArmoredCopperBacktanks {
 
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger(BuildConfig.MODID);
@@ -26,13 +26,13 @@ public class CreateArmoredBacktanks {
 
     public static final NonNullSupplier<CreateRegistrate> REGISTRATE = CreateRegistrate.lazy(BuildConfig.MODID);
 
-    public static CreativeModeTab createabtab = new CreateArmoredBacktanksTab();
+    public static CreativeModeTab createabtab = new CreateArmoredCopperBacktanksTab();
 
     public static CreateRegistrate registrate() {
         return (CreateRegistrate)REGISTRATE.get();
     }
 
-    public CreateArmoredBacktanks() {
+    public CreateArmoredCopperBacktanks() {
         ModItems.register();
         ModBlocks.register();
         ModEntities.register();

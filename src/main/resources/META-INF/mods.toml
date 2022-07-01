@@ -4,7 +4,7 @@ license = "MIT License"
 [[mods]] #mandatory
 modId = "createab" #mandatory
 version = "${file.jarVersion}" #mandatory
-displayName = "CreateArmoredBacktanks" #mandatory
+displayName = "CreateArmoredCopperBacktanks" #mandatory
 description = '''
 Adds armored Backtanks to Create
 '''
