@@ -1,13 +1,11 @@
 package io.github.stachesebastian.createab.register;
 
-import com.simibubi.create.AllItems;
-import com.simibubi.create.content.curiosities.armor.CopperBacktankBlock;
 import com.simibubi.create.foundation.block.BlockStressDefaults;
 import com.simibubi.create.foundation.data.AssetLookup;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.data.SharedProperties;
 import com.simibubi.create.repack.registrate.util.entry.BlockEntry;
-import io.github.stachesebastian.createab.CreateArmoredBacktanks;
+import io.github.stachesebastian.createab.CreateArmoredCopperBacktanks;
 import io.github.stachesebastian.createab.register.backtanks.IronReinforcedCopperBacktankBlock;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.storage.loot.LootPool;
@@ -24,8 +22,8 @@ import static com.simibubi.create.AllTags.pickaxeOnly;
 
 public class ModBlocks {
 
-    private static final CreateRegistrate REGISTRATE = CreateArmoredBacktanks.registrate()
-            .creativeModeTab(() -> CreateArmoredBacktanks.createabtab);
+    private static final CreateRegistrate REGISTRATE = CreateArmoredCopperBacktanks.registrate()
+            .creativeModeTab(() -> CreateArmoredCopperBacktanks.createabtab);
 
 
     public static final BlockEntry<IronReinforcedCopperBacktankBlock> COPPER_BACKTANK =

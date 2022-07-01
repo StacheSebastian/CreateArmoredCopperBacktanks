@@ -5,12 +5,12 @@ import com.simibubi.create.content.curiosities.armor.CopperBacktankItem;
 import com.simibubi.create.foundation.data.AssetLookup;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.repack.registrate.util.entry.ItemEntry;
-import io.github.stachesebastian.createab.CreateArmoredBacktanks;
+import io.github.stachesebastian.createab.CreateArmoredCopperBacktanks;
 
 public class ModItems {
 
-    private static final CreateRegistrate REGISTRATE = CreateArmoredBacktanks.registrate()
-            .creativeModeTab(() -> CreateArmoredBacktanks.createabtab);
+    private static final CreateRegistrate REGISTRATE = CreateArmoredCopperBacktanks.registrate()
+            .creativeModeTab(() -> CreateArmoredCopperBacktanks.createabtab);
 
 
     public static final ItemEntry<CopperBacktankItem.CopperBacktankBlockItem> COPPER_BACKTANK_PLACEABLE = REGISTRATE
