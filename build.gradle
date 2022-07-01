@@ -103,6 +103,9 @@ dependencies {
     implementation fg.deobf("com.simibubi.create:Create:mc${create_version}")
     implementation fg.deobf("com.jozufozu.flywheel:Flywheel-Forge:${flywheel_version}")
 
+    runtimeOnly fg.deobf("curse.maven:jei-238222:3847103")
+    runtimeOnly fg.deobf("curse.maven:theoneprobe-245211:3671753")
+
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 

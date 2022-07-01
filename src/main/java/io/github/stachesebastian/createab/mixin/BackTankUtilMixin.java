@@ -15,7 +15,7 @@ public class BackTankUtilMixin {
     @Inject(method = "get", at = @At("HEAD"), cancellable = true, remap = false)
     private static void onGet(LivingEntity entity, CallbackInfoReturnable<ItemStack> cir) {
         for (ItemStack itemStack : entity.getArmorSlots())
-            if (ModItems.COPPER_BACKTANK.isIn(itemStack))
+            if (ModItems.IRON_REINFORCED_COPPER_BACKTANK.isIn(itemStack))
                 cir.setReturnValue(itemStack);
     }
 }

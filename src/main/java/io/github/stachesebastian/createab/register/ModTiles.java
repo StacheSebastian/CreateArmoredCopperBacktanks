@@ -8,10 +8,10 @@ import io.github.stachesebastian.createab.CreateArmoredCopperBacktanks;
 
 public class ModTiles {
 
-    public static final BlockEntityEntry<CopperBacktankTileEntity> COPPER_BACKTANK = CreateArmoredCopperBacktanks.registrate()
-            .tileEntity("copper_backtank", CopperBacktankTileEntity::new)
+    public static final BlockEntityEntry<CopperBacktankTileEntity> IRON_REINFORCED_COPPER_BACKTANK = CreateArmoredCopperBacktanks.registrate()
+            .tileEntity("iron_reinforced_copper_backtank", CopperBacktankTileEntity::new)
             .instance(() -> CopperBacktankInstance::new)
-            .validBlocks(ModBlocks.COPPER_BACKTANK)
+            .validBlocks(ModBlocks.IRON_REINFORCED_COPPER_BACKTANK)
             .renderer(() -> CopperBacktankRenderer::new)
             .register();
     public static void register() {}

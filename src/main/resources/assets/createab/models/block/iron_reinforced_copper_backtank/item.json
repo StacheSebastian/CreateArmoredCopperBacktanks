@@ -2,8 +2,8 @@
   "credit": "Made with Blockbench",
   "parent": "block/block",
   "textures": {
-    "0": "createab:block/copper_backtank",
-    "particle": "createab:block/copper_backtank"
+    "0": "createab:block/iron_reinforced_copper_backtank",
+    "particle": "createab:block/iron_reinforced_copper_backtank"
   },
   "elements": [
     {

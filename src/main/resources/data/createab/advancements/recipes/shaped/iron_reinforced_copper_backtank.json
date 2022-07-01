@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "createab:shapeless/copper_backtank"
+      "createab:shaped/iron_reinforced_copper_backtank"
     ]
   },
   "criteria": {
@@ -21,7 +21,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "create:crafting/appliances/copper_backtank"
+        "recipe": "create:crafting/appliances/iron_reinforced_copper_backtank"
       }
     }
   },

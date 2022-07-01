@@ -6,7 +6,7 @@ import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.data.SharedProperties;
 import com.simibubi.create.repack.registrate.util.entry.BlockEntry;
 import io.github.stachesebastian.createab.CreateArmoredCopperBacktanks;
-import io.github.stachesebastian.createab.register.backtanks.IronReinforcedCopperBacktankBlock;
+import io.github.stachesebastian.createab.register.backtanks.iron.IronReinforcedCopperBacktankBlock;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
@@ -26,8 +26,8 @@ public class ModBlocks {
             .creativeModeTab(() -> CreateArmoredCopperBacktanks.createabtab);
 
 
-    public static final BlockEntry<IronReinforcedCopperBacktankBlock> COPPER_BACKTANK =
-            REGISTRATE.block("copper_backtank", IronReinforcedCopperBacktankBlock::new)
+    public static final BlockEntry<IronReinforcedCopperBacktankBlock> IRON_REINFORCED_COPPER_BACKTANK =
+            REGISTRATE.block("iron_reinforced_copper_backtank", IronReinforcedCopperBacktankBlock::new)
                     .initialProperties(SharedProperties::copperMetal)
                     .blockstate((c, p) -> p.horizontalBlock(c.getEntry(), AssetLookup.partialBaseModel(c, p)))
                     .transform(pickaxeOnly())
@@ -39,7 +39,7 @@ public class ModBlocks {
                         lt.add(block, builder.withPool(LootPool.lootPool()
                                 .when(survivesExplosion)
                                 .setRolls(ConstantValue.exactly(1))
-                                .add(LootItem.lootTableItem(ModItems.COPPER_BACKTANK.get())
+                                .add(LootItem.lootTableItem(ModItems.IRON_REINFORCED_COPPER_BACKTANK.get())
                                         .apply(CopyNameFunction.copyName(CopyNameFunction.NameSource.BLOCK_ENTITY))
                                         .apply(CopyNbtFunction.copyData(ContextNbtProvider.BLOCK_ENTITY)
                                                 .copy("Air", "Air"))

@@ -1,9 +1,7 @@
-package io.github.stachesebastian.createab.register.backtanks;
+package io.github.stachesebastian.createab.register.backtanks.iron;
 
-import com.simibubi.create.AllItems;
 import com.simibubi.create.content.curiosities.armor.CopperBacktankBlock;
 import com.simibubi.create.content.curiosities.armor.CopperBacktankTileEntity;
-import com.simibubi.create.foundation.block.ITE;
 import io.github.stachesebastian.createab.register.ModItems;
 import io.github.stachesebastian.createab.register.ModTiles;
 import net.minecraft.core.BlockPos;
@@ -25,7 +23,7 @@ public class IronReinforcedCopperBacktankBlock extends CopperBacktankBlock {
 
     @Override
     public ItemStack getCloneItemStack(BlockGetter p_185473_1_, BlockPos p_185473_2_, BlockState p_185473_3_) {
-        ItemStack item = ModItems.COPPER_BACKTANK.asStack();
+        ItemStack item = ModItems.IRON_REINFORCED_COPPER_BACKTANK.asStack();
         Optional<CopperBacktankTileEntity> tileEntityOptional = getTileEntityOptional(p_185473_1_, p_185473_2_);
 
         int air = tileEntityOptional.map(CopperBacktankTileEntity::getAirLevel)
@@ -50,7 +48,6 @@ public class IronReinforcedCopperBacktankBlock extends CopperBacktankBlock {
 
     @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-        return ModTiles.COPPER_BACKTANK.create(pos, state);
+        return ModTiles.IRON_REINFORCED_COPPER_BACKTANK.create(pos, state);
     }
-
 }
