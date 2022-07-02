@@ -1,4 +1,4 @@
-package io.github.stachesebastian.createab.register.backtanks.iron;
+package io.github.stachesebastian.createab.register.backtanks.gold;
 
 import com.simibubi.create.content.curiosities.armor.BackTankUtil;
 import com.simibubi.create.content.curiosities.armor.CapacityEnchantment;
@@ -10,22 +10,21 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.block.Block;
 
-public class IronReinforcedCopperBacktankItem extends IronArmorItem implements CapacityEnchantment.ICapacityEnchantable {
+public class GoldReinforcedCopperBacktankItem extends GoldArmorItem implements CapacityEnchantment.ICapacityEnchantable {
     public static final int DURABILITY_BAR = 15724527;
-    private ItemEntry<IronReinforcedCopperBacktankBlockItem> blockItem;
+    private ItemEntry<GoldReinforcedCopperBacktankBlockItem> blockItem;
 
-    public IronReinforcedCopperBacktankItem(Item.Properties p_i48534_3_, ItemEntry<IronReinforcedCopperBacktankBlockItem> IronReinforcedCopperBacktankPlaceable) {
+    public GoldReinforcedCopperBacktankItem(Properties p_i48534_3_, ItemEntry<GoldReinforcedCopperBacktankBlockItem> GoldReinforcedCopperBacktankPlaceable) {
         super(EquipmentSlot.CHEST, p_i48534_3_);
-        this.blockItem = IronReinforcedCopperBacktankPlaceable;
+        this.blockItem = GoldReinforcedCopperBacktankPlaceable;
     }
 
     public InteractionResult useOn(UseOnContext p_195939_1_) {
-        return ((IronReinforcedCopperBacktankBlockItem)this.blockItem.get()).useOn(p_195939_1_);
+        return ((GoldReinforcedCopperBacktankBlockItem)this.blockItem.get()).useOn(p_195939_1_);
     }
 
     public boolean canBeDepleted() {
@@ -63,8 +62,8 @@ public class IronReinforcedCopperBacktankItem extends IronArmorItem implements C
         return orCreateTag.getInt("Air");
     }
 
-    public static class IronReinforcedCopperBacktankBlockItem extends BlockItem {
-        public IronReinforcedCopperBacktankBlockItem(Block pBlock, Item.Properties pProperties) {
+    public static class GoldReinforcedCopperBacktankBlockItem extends BlockItem {
+        public GoldReinforcedCopperBacktankBlockItem(Block pBlock, Properties pProperties) {
             super(pBlock, pProperties);
         }
 

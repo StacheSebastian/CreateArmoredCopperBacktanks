@@ -17,5 +17,11 @@ public class BackTankUtilMixin {
         for (ItemStack itemStack : entity.getArmorSlots())
             if (ModItems.IRON_REINFORCED_COPPER_BACKTANK.isIn(itemStack))
                 cir.setReturnValue(itemStack);
+            else if (ModItems.GOLD_REINFORCED_COPPER_BACKTANK.isIn(itemStack))
+                cir.setReturnValue(itemStack);
+            else if (ModItems.DIAMOND_REINFORCED_COPPER_BACKTANK.isIn(itemStack))
+                cir.setReturnValue(itemStack);
+            else if (ModItems.NETHERITE_REINFORCED_COPPER_BACKTANK.isIn(itemStack))
+                cir.setReturnValue(itemStack);
     }
 }

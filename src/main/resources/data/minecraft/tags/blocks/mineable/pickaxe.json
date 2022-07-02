@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "createab:iron_reinforced_copper_backtank"
+    "createab:iron_reinforced_copper_backtank",
+    "createab:gold_reinforced_copper_backtank",
+    "createab:diamond_reinforced_copper_backtank"
   ]
 }

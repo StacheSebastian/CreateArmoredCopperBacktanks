@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "createab:diamond_reinforced_copper_backtanks"
+  },
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "result": {
+    "item": "createab:netherite_reinforced_copper_backtanks"
+  }
+}

@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "createab:shaped/iron_reinforced_copper_backtank"
+      "createab:smithing/netherite_reinforced_copper_backtank"
     ]
   },
   "criteria": {
@@ -12,8 +12,8 @@
         "items": [
           {
             "items": [
-              "minecraft:iron_ingot",
-              "create:copper_backtank"
+              "minecraft:netherite_ingot",
+              "createab:diamond_reinforced_copper_backtank"
             ]
           }
         ]
