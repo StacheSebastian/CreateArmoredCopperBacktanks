@@ -1,8 +1,8 @@
 package io.github.stachesebastian.createab.register.config;
 
+import StacheSebastian.BuildConfig;
 import com.simibubi.create.foundation.block.BlockStressDefaults;
 import com.simibubi.create.foundation.block.BlockStressValues;
-import mod.StacheSebastian.createab.BuildConfig;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.ForgeConfigSpec;

@@ -1,10 +1,10 @@
 package io.github.stachesebastian.createab;
 
+import StacheSebastian.BuildConfig;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.repack.registrate.util.nullness.NonNullSupplier;
 import io.github.stachesebastian.createab.register.*;
 import io.github.stachesebastian.createab.register.config.ModConfigs;
-import mod.StacheSebastian.createab.BuildConfig;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.data.loading.DatagenModLoader;

@@ -22,9 +22,9 @@ apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'idea'
 apply plugin: 'eclipse'
 
-group = "mod.${author}.${modid}"
+group = "${author}"
 version = "${minecraft_version}-${mod_version}"
-archivesBaseName = modid
+archivesBaseName = "${modid}"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 

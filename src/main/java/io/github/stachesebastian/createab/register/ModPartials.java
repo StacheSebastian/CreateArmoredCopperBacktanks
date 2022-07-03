@@ -1,8 +1,8 @@
 package io.github.stachesebastian.createab.register;
 
+import StacheSebastian.BuildConfig;
 import com.jozufozu.flywheel.core.PartialModel;
 import com.simibubi.create.Create;
-import mod.StacheSebastian.createab.BuildConfig;
 import net.minecraft.resources.ResourceLocation;
 
 public class ModPartials {

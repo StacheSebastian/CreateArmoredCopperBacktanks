@@ -1,0 +1,17 @@
+{
+  "itemGroup.createabtab": "CreateArmoredCopperBacktanks",
+
+  "block.createab.iron_reinforced_copper_backtank": "Iron Reinforced Copper Backtank",
+  "block.createab.gold_reinforced_copper_backtank": "Gold Reinforced Copper Backtank",
+  "block.createab.diamond_reinforced_copper_backtank": "Diamond Reinforced Copper Backtank",
+  "block.createab.netherite_reinforced_copper_backtank": "Netherite Reinforced Copper Backtank",
+
+  "item.createab.iron_reinforced_copper_backtank": "Iron Reinforced Copper Backtank",
+  "item.createab.iron_reinforced_copper_backtank_placeable": "Iron Reinforced Copper Backtank Placeable",
+  "item.createab.gold_reinforced_copper_backtank": "Gold Reinforced Copper Backtank",
+  "item.createab.gold_reinforced_copper_backtank_placeable": "Gold Reinforced Copper Backtank Placeable",
+  "item.createab.diamond_reinforced_copper_backtank": "Diamond Reinforced Copper Backtank",
+  "item.createab.diamond_reinforced_copper_backtank_placeable": "Diamond Reinforced Copper Backtank Placeable",
+  "item.createab.netherite_reinforced_copper_backtank": "Netherite Reinforced Copper Backtank",
+  "item.createab.netherite_reinforced_copper_backtank_placeable": "Netherite Reinforced Copper Backtank Placeable"
+}
