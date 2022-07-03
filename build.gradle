@@ -23,7 +23,7 @@ apply plugin: 'idea'
 apply plugin: 'eclipse'
 
 group = "${author}"
-version = "${minecraft_version}-${mod_version}"
+version = "${minecraft_version}_v${mod_version}"
 archivesBaseName = "${modid}"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
