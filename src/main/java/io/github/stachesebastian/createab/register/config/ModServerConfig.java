@@ -3,9 +3,11 @@ package io.github.stachesebastian.createab.register.config;
 import StacheSebastian.BuildConfig;
 import com.simibubi.create.foundation.block.BlockStressDefaults;
 import com.simibubi.create.foundation.block.BlockStressValues;
+import com.simibubi.create.foundation.utility.Couple;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.ForgeConfigSpec;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -54,6 +56,12 @@ public class ModServerConfig extends ModConfigs.Config {
         @Override
         public boolean hasCapacity(Block block) {
             return capacities.containsKey(block.getRegistryName());
+        }
+
+        @Nullable
+        @Override
+        public Couple<Integer> getGeneratedRPM(Block block) {
+            return null;
         }
     }
 
