@@ -1,8 +1,8 @@
 package createab;
 
-import StacheSebastian.BuildConfig;
+import StacheSebastian.createab.BuildConfig;
 import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.simibubi.create.repack.registrate.util.nullness.NonNullSupplier;
+import com.tterrag.registrate.util.nullness.NonNullSupplier;
 import createab.register.*;
 import createab.register.config.ModConfigs;
 import net.minecraft.world.item.CreativeModeTab;

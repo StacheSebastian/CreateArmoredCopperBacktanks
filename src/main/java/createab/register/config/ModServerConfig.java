@@ -1,6 +1,6 @@
 package createab.register.config;
 
-import StacheSebastian.BuildConfig;
+import StacheSebastian.createab.BuildConfig;
 import com.simibubi.create.foundation.block.BlockStressDefaults;
 import com.simibubi.create.foundation.block.BlockStressValues;
 import com.simibubi.create.foundation.utility.Couple;

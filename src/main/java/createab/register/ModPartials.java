@@ -1,6 +1,6 @@
 package createab.register;
 
-import StacheSebastian.BuildConfig;
+import StacheSebastian.createab.BuildConfig;
 import com.jozufozu.flywheel.core.PartialModel;
 import com.simibubi.create.Create;
 import net.minecraft.resources.ResourceLocation;

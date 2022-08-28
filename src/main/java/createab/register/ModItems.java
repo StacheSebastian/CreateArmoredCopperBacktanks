@@ -2,7 +2,7 @@ package createab.register;
 
 import com.simibubi.create.foundation.data.AssetLookup;
 import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.simibubi.create.repack.registrate.util.entry.ItemEntry;
+import com.tterrag.registrate.util.entry.ItemEntry;
 import createab.register.backtanks.gold.GoldArmorItem;
 import createab.register.backtanks.gold.GoldReinforcedCopperBacktankItem;
 import createab.register.backtanks.iron.IronArmorItem;

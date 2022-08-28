@@ -3,7 +3,7 @@ package createab.register;
 import com.simibubi.create.content.curiosities.armor.CopperBacktankInstance;
 import com.simibubi.create.content.curiosities.armor.CopperBacktankRenderer;
 import com.simibubi.create.content.curiosities.armor.CopperBacktankTileEntity;
-import com.simibubi.create.repack.registrate.util.entry.BlockEntityEntry;
+import com.tterrag.registrate.util.entry.BlockEntityEntry;
 import createab.CreateArmoredCopperBacktanks;
 
 public class ModTiles {

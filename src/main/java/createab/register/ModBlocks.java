@@ -4,7 +4,7 @@ import com.simibubi.create.foundation.block.BlockStressDefaults;
 import com.simibubi.create.foundation.data.AssetLookup;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.data.SharedProperties;
-import com.simibubi.create.repack.registrate.util.entry.BlockEntry;
+import com.tterrag.registrate.util.entry.BlockEntry;
 import createab.register.backtanks.gold.GoldReinforcedCopperBacktankBlock;
 import createab.register.backtanks.iron.IronReinforcedCopperBacktankBlock;
 import createab.CreateArmoredCopperBacktanks;
